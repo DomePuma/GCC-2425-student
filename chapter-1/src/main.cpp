@@ -56,7 +56,6 @@ int main()
     
     Unit u2;
     u2.DisplayTexture();
-
-    return 0;
     
+    return 0;
 }
