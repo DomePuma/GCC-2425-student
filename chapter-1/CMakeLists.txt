@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.1 FATAL_ERROR)
 
-project(    tp0
-            DESCRIPTION "Chapter 0"
+project(    tp1
+            DESCRIPTION "Chapter 1"
             LANGUAGES C CXX
 )
 
