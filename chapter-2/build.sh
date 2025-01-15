@@ -30,7 +30,7 @@ elif [[ $1 = "-r" ]]; then
   echo "# Running the projet"
   # On retire l'argument du script [-a|-m|-r] pour ne garder que ceux passés au programme
   shift
-  ./tp1 $@
+  ./tp2 $@
 else
   echo "Usage: ./build.sh [-a|-m|-r]"
 fi
