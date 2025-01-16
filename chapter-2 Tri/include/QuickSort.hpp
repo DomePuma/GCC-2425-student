@@ -8,7 +8,8 @@ struct QuickSort final : ISort
 {
     void sort(std::vector<int>& v) override
     {
-        std::size_t collectionSize = v.size();
+        std::size_t collectionSize_t = v.size();
+        int collectionSize = collectionSize_t;
         QuickShort(v, collectionSize, 0, 0);
     }
 
@@ -27,13 +28,6 @@ struct QuickSort final : ISort
         }
     }
     
-    void Swap(std::vector<int>& v, int left, int right)
-    {
-        int tabLeft = v[left];
-        v[left] = v[right];
-        v[right] = tabLeft;
-    }
-    
     int Partition(std::vector<int>& v, int low, int high)
     {
         int pivot_index = high;
@@ -43,12 +37,12 @@ struct QuickSort final : ISort
         {
             if (v[i] <= v[pivot_index])
             {
-                Swap(v, i, l);
+                std::swap(v[i], v[l]);
                 l++;
             }
         }
 
-        Swap(v, l, pivot_index);
+        std::swap(v[l], v[pivot_index]);
         return l;
     }
 };

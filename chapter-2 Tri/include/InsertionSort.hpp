@@ -8,7 +8,8 @@ struct InsertionSort final : ISort
 {
     void sort(std::vector<int>& v) override
     {
-        std::size_t collectionSize = v.size();
+        std::size_t collectionSize_t = v.size();
+        int collectionSize = collectionSize_t;
         for (int i = 1; i < collectionSize; ++i) 
         {
             int aux = v[i];
